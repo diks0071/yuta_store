@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>yuta_store | Roblox Fish It</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- BANNER / HEADER -->
+<header class="banner">
+  <div class="brand">
+    <h1>yuta<span>_store</span></h1>
+    <p>Roblox Fish It • Jasa & Item</p>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h2>Jasa & Item Roblox Fish It</h2>
+  <p>Aman • Cepat • Manual Admin • QRIS Available</p>
+</section>
+
+<!-- PRODUK -->
+<div class="container">
+
+  <div class="card">
+    <img src="images/fish1.jpg">
+    <h3>Auto Fishing PRO</h3>
+    <p class="desc">Auto farm fish Roblox Fish It cepat & aman.</p>
+    <p class="price">Rp 15.000</p>
+    <button onclick="order('Auto Fishing PRO',15000)">Order WhatsApp</button>
+  </div>
+
+  <div class="card">
+    <img src="images/fish2.jpg">
+    <h3>Legendary Fish Instant</h3>
+    <p class="desc">Langsung dapet ikan langka.</p>
+    <p class="price">Rp 25.000</p>
+    <button onclick="order('Legendary Fish Instant',25000)">Order WhatsApp</button>
+  </div>
+
+  <div class="card">
+    <img src="images/vip.jpg">
+    <h3>VIP Server 24 Jam</h3>
+    <p class="desc">Server private anti ganggu.</p>
+    <p class="price">Rp 20.000</p>
+    <button onclick="order('VIP Server 24 Jam',20000)">Order WhatsApp</button>
+  </div>
+
+  <!-- QRIS -->
+  <div class="card">
+    <img src="images/qris.jpg">
+    <h3>Pembayaran QRIS</h3>
+    <p class="desc">
+      Bayar via QRIS (DANA, OVO, GoPay, ShopeePay).
+      QR dikirim admin via WhatsApp.
+    </p>
+    <p class="price">Manual Payment</p>
+    <button onclick="orderQRIS()">Bayar via WhatsApp</button>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 <b>yuta_store</b> • Order via WhatsApp
+</footer>
+
+<!-- SCRIPT -->
+<script>
+function order(product, price) {
+  const text =
+    "Halo Admin, saya mau order:\n" +
+    "Produk: " + product + "\n" +
+    "Harga: Rp " + price;
+
+  window.open(
+    "https://wa.me/6281241378680?text=" + encodeURIComponent(text),
+    "_blank"
+  );
+}
+
+function orderQRIS() {
+  const text =
+    "Halo Admin, saya mau bayar via QRIS.\nMohon kirim QR Code.";
+
+  window.open(
+    "https://wa.me/6281241378680?text=" + encodeURIComponent(text),
+    "_blank"
+  );
+}
+</script>
+
+</body>
+</html>
